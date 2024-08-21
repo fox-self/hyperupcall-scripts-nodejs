@@ -1,0 +1,83 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+  .:
+    dependencies:
+      '@hyperupcall/prettier-config':
+        specifier: ^0.8.0
+        version: 0.8.0
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
+      prettier-plugin-pkg:
+        specifier: ^0.18.1
+        version: 0.18.1(prettier@3.3.3)
+    devDependencies:
+      '@types/node':
+        specifier: ^22.4.2
+        version: 22.4.2
+
+packages:
+  '@hyperupcall/config-utils@0.1.0':
+    resolution:
+      {
+        integrity: sha512-lLWnaKd9aZ01Qcl8S/U0X3Vxs53lKjfSh07y4rVsYjkWnnSXhXmz7Lm2kbIo265qklISOgFblwAaYgE55KhA3g==,
+      }
+
+  '@hyperupcall/prettier-config@0.8.0':
+    resolution:
+      {
+        integrity: sha512-5lGFBRv7BQ+HNSPsx4bTUX+UVtZztcgpS1HpHIy+1tSAnoaN1jd8+qIsXGWoHE+9E0Fobso78aNIlX1TxwnzFg==,
+      }
+
+  '@types/node@22.4.2':
+    resolution:
+      {
+        integrity: sha512-nAvM3Ey230/XzxtyDcJ+VjvlzpzoHwLsF7JaDRfoI0ytO0mVheerNmM45CtA0yOILXwXXxOrcUWH3wltX+7PSw==,
+      }
+
+  prettier-plugin-pkg@0.18.1:
+    resolution:
+      {
+        integrity: sha512-FuUxvsYZR/8rsLH8s/jbPQmgYvv0yxW8LoIHCy6+Q7p4FBjjdP3DNKx8fMTOsc0SlEB1skB4o1LcahRceIh87A==,
+      }
+    engines: { node: ^14.18.0 || >=16.0.0 }
+    peerDependencies:
+      prettier: ^3.0.3
+
+  prettier@3.3.3:
+    resolution:
+      {
+        integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==,
+      }
+    engines: { node: '>=14' }
+    hasBin: true
+
+  undici-types@6.19.8:
+    resolution:
+      {
+        integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==,
+      }
+
+snapshots:
+  '@hyperupcall/config-utils@0.1.0': {}
+
+  '@hyperupcall/prettier-config@0.8.0':
+    dependencies:
+      '@hyperupcall/config-utils': 0.1.0
+
+  '@types/node@22.4.2':
+    dependencies:
+      undici-types: 6.19.8
+
+  prettier-plugin-pkg@0.18.1(prettier@3.3.3):
+    dependencies:
+      prettier: 3.3.3
+
+  prettier@3.3.3: {}
+
+  undici-types@6.19.8: {}

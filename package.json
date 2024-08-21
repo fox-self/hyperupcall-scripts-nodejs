@@ -1,0 +1,22 @@
+{
+	"name": "@hyperupcall/scripts-nodejs",
+	"version": "0.1.0",
+	"type": "module",
+	"private": false,
+	"bin": {
+		"hyperupcall-scripts-nodejs": "./scripts-nodejs.js"
+	},
+	"scripts": {
+		"format": "./scripts-nodejs.js format",
+		"lint": "./scripts-nodejs.js lint"
+	},
+	"dependencies": {
+		"@hyperupcall/prettier-config": "^0.8.0",
+		"prettier": "^3.3.3",
+		"prettier-plugin-pkg": "^0.18.1"
+	},
+	"devDependencies": {
+		"@types/node": "^22.4.2"
+	},
+	"prettier": "./prettier-config.js"
+}
