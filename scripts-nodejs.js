@@ -37,6 +37,13 @@ if (positionals[0] === 'format') {
 		throw new Error(`Invalid: ${positionals[1]}`)
 	}
 } else if (positionals[0] === 'lint') {
+	if (positionals[1] === 'check') {
+		run(['eslint', '.'])
+	} else if (positionals[1] === 'fix') {
+		run(['eslint', '--fix', '.'])
+	} else {
+		throw new Error(`Invalid: ${positionals[1]}`)
+	}
 } else {
 	throw new Error(`Invalid: ${positionals[0]}`)
 }
