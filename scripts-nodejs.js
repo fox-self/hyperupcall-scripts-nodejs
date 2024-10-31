@@ -52,6 +52,12 @@ async function run(/** @type {string[]} */ command) {
 	const child = spawn(command[0], command.slice(1), {
 		env: {
 			...process.env,
+			/**
+			 * This experimental flag is enabled by default on some Node versions. It causes
+			 * with Prettier, giving warnings like `[warn] Ignored unknown option { __esModule: true }`
+			 * Disable for now.
+			 */
+			NODE_OPTIONS: '--no-experimental-require-module',
 			HYPERUPCALL_FORMAT_LEVEL: values.level ?? 'dev',
 		},
 	})
