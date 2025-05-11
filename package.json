@@ -19,7 +19,7 @@
 	"types": "./output/index.d.ts",
 	"files": [
 		"config-eslint.js",
-		"config-prettier.js",
+		"config-prettier.cjs",
 		"scripts-nodejs.js"
 	],
 	"scripts": {

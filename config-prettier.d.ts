@@ -1,3 +1,3 @@
-declare const exports: Record<string, unknown>
+declare const exports: Record<PropertyKey, unknown>
 
 export = exports
