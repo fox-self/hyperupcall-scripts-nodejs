@@ -1,3 +1,3 @@
-# `@hyperupcall/scripts-nodejs`
+# @hyperupcall/scripts-nodejs
 
-Contains dependencies and scripts for managing NodeJS projects.
+Contains dependencies and scripts for managing my NodeJS projects.
